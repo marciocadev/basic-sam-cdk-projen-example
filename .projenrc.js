@@ -3,15 +3,15 @@ const project = new AwsCdkTypeScriptApp({
   cdkVersion: '1.130.0',
   defaultReleaseBranch: 'main',
   name: 'basic-sam-cdk-projen-example',
+  dependabot: false,
 
   cdkDependencies: [
     '@aws-cdk/aws-lambda',
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-apigateway',
     '@aws-cdk/aws-dynamodb',
-  ]
+  ],
 
-  
 
   // cdkDependencies: undefined,  /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
   // deps: [],                    /* Runtime dependencies of this module. */
