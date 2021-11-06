@@ -1,8 +1,12 @@
 const { AwsCdkTypeScriptApp } = require('projen');
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: '1.95.2',
+  cdkVersion: '1.130.0',
   defaultReleaseBranch: 'main',
   name: 'basic-sam-cdk-projen-example',
+
+  cdkDependencies: ['@aws-cdk/aws-lambda']
+
+  
 
   // cdkDependencies: undefined,  /* Which AWS CDK modules (those that start with "@aws-cdk/") this app uses. */
   // deps: [],                    /* Runtime dependencies of this module. */
