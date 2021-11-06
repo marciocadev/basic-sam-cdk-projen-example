@@ -4,7 +4,12 @@ const project = new AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
   name: 'basic-sam-cdk-projen-example',
 
-  cdkDependencies: ['@aws-cdk/aws-lambda']
+  cdkDependencies: [
+    '@aws-cdk/aws-lambda',
+    '@aws-cdk/aws-iam',
+    '@aws-cdk/aws-apigateway',
+    '@aws-cdk/aws-dynamodb',
+  ]
 
   
 
